@@ -1,0 +1,45 @@
+#include <stdio.h>
+//Utilizando os conceitos de estruturas aninhadas, 
+//elabore umprograma em C que acumule os dados de um estudante(estrutura filha) e da Faculdade (estrutura pai) na qual ele estuda. 
+//Considere como dados do estudante o seu id, o seunome[20] e sua matrícula. Para a Faculdade considere onome[20] e um código de identificação.
+//Os dados recebidos não precisam ser armazenados em um vetor
+
+typedef struct pai
+{
+	char nome[30];
+	int id;
+
+		struct filho
+		{
+		char nome[30];
+		int id;
+		int matricula;
+
+		}aluno;
+}facul;
+
+int main(){
+	
+facul faculdade;
+	
+	printf("Digite o nome do aluno: ");
+	scanf("%s",&faculdade.aluno.nome);
+	
+	printf("Digite o id do aluno: ");
+	scanf("%d",&faculdade.aluno.id);
+	
+	printf("Digite a matricula do aluno: ");
+	scanf("%d",&faculdade.aluno.matricula);
+	
+	
+	printf("Nome do aluno: %s\n",faculdade.aluno.nome);
+	printf("Id do aluno: %d\n",faculdade.aluno.id);
+	printf("Matricula do aluno: %d\n",faculdade.aluno.matricula);
+	
+	
+
+		
+		
+		
+		
+		
